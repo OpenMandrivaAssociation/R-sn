@@ -1,16 +1,17 @@
 %global packname  sn
 %global rlibdir  %{_libdir}/R/library
-%define debug_package %{nil}
 
 Name:             R-%{packname}
-Version:          0.4.18
-Release:          1
+Version:          0.4
+Release:          18
 Summary:          The skew-normal and skew-t distributions
 Group:            Sciences/Mathematics
 License:          GPLv2
 URL:              http://cran.r-project.org/web/packages/sn/index.html
 Source0:          http://cran.r-project.org/src/contrib/sn_0.4-18.tar.gz
 Requires:         R-mnormt
+BuildRequires:    R-devel
+BuildArch:        noarch
 
 %description
 Functions for manipulating skew-normal and skew-t probability distributions,
