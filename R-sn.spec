@@ -2,8 +2,8 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.4
-Release:          18
+Version:          0.4_18
+Release:          1
 Summary:          The skew-normal and skew-t distributions
 Group:            Sciences/Mathematics
 License:          GPLv2
