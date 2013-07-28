@@ -9,8 +9,7 @@ Group:            Sciences/Mathematics
 License:          GPLv2
 URL:              http://cran.r-project.org/web/packages/sn/index.html
 Source0:          http://cran.r-project.org/src/contrib/sn_0.4-18.tar.gz
-Requires:         R-mnormt
-BuildRequires:    R-devel
+BuildRequires:    R-devel R-mnormt R-sm
 BuildArch:        noarch
 
 %description
@@ -30,3 +29,15 @@ rm -f %{buildroot}%{rlibdir}/R.css
 
 %check
 %{_bindir}/R CMD check %{packname}
+
+%files
+%dir %{rlibdir}/%{packname}
+%doc %{rlibdir}/%{packname}/DESCRIPTION
+%doc %{rlibdir}/%{packname}/CITATION
+%doc %{rlibdir}/%{packname}/html
+%{rlibdir}/%{packname}/INDEX
+%{rlibdir}/%{packname}/Meta
+%{rlibdir}/%{packname}/data
+%{rlibdir}/%{packname}/NAMESPACE
+%{rlibdir}/%{packname}/R
+%{rlibdir}/%{packname}/help
