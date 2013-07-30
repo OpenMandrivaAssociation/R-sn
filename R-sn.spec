@@ -2,15 +2,15 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.4_18
+Version:          0.4.18
 Release:          1
 Summary:          The skew-normal and skew-t distributions
 Group:            Sciences/Mathematics
 License:          GPLv2
-URL:              http://cran.r-project.org/web/packages/sn/index.html
-Source0:          http://cran.r-project.org/src/contrib/sn_0.4-18.tar.gz
-BuildRequires:    R-devel R-mnormt
-Requires:         R-core R-sm locales-sn
+URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.4-18.tar.gz
+BuildRequires:    R-devel R-mnormt R-sm
+Requires:         R-core R-mnormt R-sm
 BuildArch:        noarch
 
 %description
