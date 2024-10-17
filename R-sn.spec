@@ -7,7 +7,7 @@ Release:          1
 Summary:          The skew-normal and skew-t distributions
 Group:            Sciences/Mathematics
 License:          GPLv2
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.4-18.tar.gz
 BuildRequires:    R-devel R-mnormt R-sm
 Requires:         R-core R-mnormt R-sm
